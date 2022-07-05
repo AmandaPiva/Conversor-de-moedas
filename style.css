@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h1{
+    margin: 2rem;
+    font-weight: 300;
+    color: darkgoldenrod;
+}
+
+div.box{
+    margin: 2rem;
+}
+
+span{
+    font-size: 20px;
+    color: goldenrod;
+}
+
+input#ValorEmReal{
+    margin-left: 10px;
+    width: 32%;
+    height: 38px;
+    background: rgb(10, 67, 67);
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+div.radio{
+    margin: 3rem;
+    font-size: 20px;
+}
+
+.buttons{
+    margin: 3rem;
+    margin-left: 6rem;
+}
+
+button.desativado{
+    background: red;
+    height: 40px;
+    width: 100px;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.botao{
+    background: gray;
+    margin-left: 35px;
+    height: 40px;
+    width: 100px;
+    color: aliceblue;
+    border-radius: 5px;   
+    cursor: pointer;
+}
+
+.instrucoes{
+    margin: 3rem;
+    background: rgb(10, 67, 67);
+    width: 310px;
+    height: 65px;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+.instrucoes p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}

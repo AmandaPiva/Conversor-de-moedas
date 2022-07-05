@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DesafioMoedas</title>
+</head>
+<body>
+    <h1>Conversor de Moedas</h1>
+
+    <div class="box">
+        <span>R$</span>
+        <input type="number" name="ValorEmReal" id="ValorEmReal"  min="0.00" max="9999999999.99" value="" step="0.01"  onclick="ativarBotao()" onchange="ativarBotao()" autofocus required>
+    </div>
+    
+    <div class="radio">
+        <input type="radio" name="moedaEstrangeira" value="dolar" id="dolar">
+        <label for="dolar">Dolar</label>
+
+        <input type="radio" name="moedaEstrangeira" value="euro" id="euro">
+        <label for="euro">Euro</label>
+
+        <input type="radio" name="moedaEstrangeira" value="libra" id="libra">
+        <label for="libra">Libra</label>
+
+        <input type="radio" name="moedaEstrangeira" value="bitcoins" id="bitcoins">
+        <label for="bitcoins">Bitcoins</label>
+    </div>
+    
+    <div class="buttons">
+        <button class="desativado" id="Converter" onclick="ativarBotao(); bloquearBotao()" disabled>Converter</button>
+        <button type="reset" class="botao" id="btnLimpar" tabindex="7">Limpar</button>
+    </div>
+    
+    <div class="instrucoes">
+        <p class="centro" id="aviso">Digite o valor, escolha a moeda e converta</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
